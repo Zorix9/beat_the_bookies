@@ -38,3 +38,6 @@ termcolor
 ## plotting
 ipywidgets
 plotly
+
+## UserInterface
+streamlit
