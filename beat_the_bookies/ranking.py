@@ -7,8 +7,8 @@ dic_season ={'09-10':9,'10-11':8,'11-12':7,'12-13':6,'13-14':5,'14-15':4,'15-16'
 
 def ranking_per_year(league,season):
     '''
-    Compute the classement of every season
-    ATTENTION : fct prend rien en paarmètre mais utilise la variable list_df
+    Takes the league and the season in parameter.
+    Return the classement of the league in this particular season.
     '''
     ## doit appeler la fonction get_data()
     list_df = get_data(league)
@@ -26,19 +26,12 @@ def ranking_per_year(league,season):
     return classement
 
 
-def ranking_top_five(league,season):
-    ## doit appeler la fonction get_data()
-    list_df = get_data(league)
-
-    df_classement = ranking_per_year(league,season)
-    lst_best_teams = df_classement['team'][0:6]
-
-    df = list_df[dic_season[season]]
 
 
 def ranking_over_year(league,season):
     '''
     Takes in imput the league and the season
+    Return the dataframe with the cumulative sum of the points of the 5 best teams overs the year.
     '''
     list_df = get_data(league)
 

@@ -4,6 +4,11 @@ import plotly.express as px
 
 
 def get_shot(league,season):
+    '''
+    Takes in input the league and the season
+    Return the pie chart with the shots, the shots on target and the goals per games
+    '''
+
     list_shot = ['Goals','Shots on target','Shots']
     dic_season ={'09-10':9,'10-11':8,'11-12':7,'12-13':6,'13-14':5,'14-15':4,'15-16':3,'16-17':2,'17-18':1,'18-19':0}
     list_df = get_data(league)

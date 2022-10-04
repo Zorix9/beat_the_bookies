@@ -28,8 +28,6 @@ fig = get_card(option1,option2)
 fig_shot = get_shot(option1,option2)
 df_best_team = ranking_over_year(option1,option2)
 
-#st.write(list_df[dic_season[option2]])
-#direction = st.radio('Select a direction', ('Shots stats', 'Cards stats'))
 
 
 ## just to try to put two stuff side by side
