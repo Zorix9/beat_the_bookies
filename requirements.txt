@@ -41,3 +41,6 @@ plotly
 
 ## UserInterface
 streamlit
+
+# needed for pie plot
+nbformat>=4.2.0
